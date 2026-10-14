@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive image slider built with vanilla JavaScript.">
+  <title>Image Slider Library</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="slider.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <p class="eyebrow">VANILLA JAVASCRIPT COMPONENT</p>
+      <h1>Image Slider Library</h1>
+      <p class="subtitle">A responsive slider with animated navigation and infinite looping.</p>
+    </header>
+
+    <section class="slider-section" aria-label="Featured images">
+      <div class="slider" data-slider>
+        <div class="slider__viewport">
+          <div class="slider__track" data-track>
+            <article class="slide">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=85"
+                   alt="Sunlight over a green mountain valley">
+              <div class="slide__caption"><span>01 / LANDSCAPE</span><h2>Find your horizon</h2></div>
+            </article>
+            <article class="slide">
+              <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=85"
+                   alt="A calm alpine lake surrounded by mountains">
+              <div class="slide__caption"><span>02 / NATURE</span><h2>Pause and explore</h2></div>
+            </article>
+            <article class="slide">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=85"
+                   alt="Sun rays shining through a forest">
+              <div class="slide__caption"><span>03 / FOREST</span><h2>Take the scenic route</h2></div>
+            </article>
+            <article class="slide">
+              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=85"
+                   alt="Snow-covered mountain peaks under a clear sky">
+              <div class="slide__caption"><span>04 / MOUNTAINS</span><h2>Go beyond the usual</h2></div>
+            </article>
+          </div>
+        </div>
+        <button class="slider__arrow slider__arrow--previous" type="button" data-previous aria-label="Previous image">‹</button>
+        <button class="slider__arrow slider__arrow--next" type="button" data-next aria-label="Next image">›</button>
+        <div class="slider__footer">
+          <p class="slider__counter" data-counter aria-live="polite">01 / 04</p>
+          <div class="slider__dots" data-dots aria-label="Choose an image"></div>
+          <p class="slider__hint">USE ARROWS OR DOTS</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="details">
+      <div><span class="detail-number">01</span><h3>Fluid movement</h3><p>The track moves on the X-axis using a CSS transform transition.</p></div>
+      <div><span class="detail-number">02</span><h3>Direct navigation</h3><p>Generated indicator buttons let users jump to any slide.</p></div>
+      <div><span class="detail-number">03</span><h3>Responsive layout</h3><p>The component adapts to smaller screens and respects reduced-motion settings.</p></div>
+    </section>
+    <footer>Built with HTML, CSS, and vanilla JavaScript · No carousel library required</footer>
+  </main>
+</body>
+</html>
